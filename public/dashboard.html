@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학기말 점수 계산기</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+</head>
+<body>
+  <button id="logoutBtn" onclick="logout()">로그아웃</button>
+  <h2 id="title">과목별 점수 입력(자동저장됨)</h2>
+  <div id="scoreArea"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyC35GSzG5lnuKuaB-AWmtQXCKQho9imJbs",
+      authDomain: "tools-login-997dd.firebaseapp.com",
+      projectId: "tools-login-997dd",
+      storageBucket: "tools-login-997dd.firebasestorage.app",
+      messagingSenderId: "226766047223",
+      appId: "1:226766047223:web:b29ef46bb0cf0de1b610f2",
+      measurementId: "G-BKCYCR9FNC"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+

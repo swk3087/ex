@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>학기말 점수 계산기</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+</head>
+<body>
+  <div class="card">
+    <h2>학기말 점수 계산기</h2>
+
+    <div class="tabs">
+      <div class="tab active" id="loginTab" onclick="showTab('login')">로그인</div>
+      <div class="tab" id="registerTab" onclick="showTab('register')">회원가입</div>
+    </div>
+
+    <!-- 로그인 -->
+    <div id="loginForm">
+      <div class="input-group">
+        <input id="loginEmail" type="email" placeholder="이메일 주소">
+      </div>
+      <div class="input-group">
+        <input id="loginPassword" type="password" placeholder="비밀번호">
+      </div>
+      <div class="input-group">
+        <input id="loginStunum" placeholder="학번 (4자리)">
+      </div>
+      <button onclick="login()">로그인</button>
+    </div>
+
+    <!-- 회원가입 -->
+    <div id="registerForm" class="hidden">
+      <div class="input-group">
+        <input id="registerEmail" type="email" placeholder="이메일 주소">
+      </div>
+      <div class="input-group">
+        <input id="registerPassword" type="password" placeholder="비밀번호">
+      </div>
+      <div class="input-group">
+        <input id="registerStunum" placeholder="학번 (4자리)">
+      </div>
+      <button onclick="register()">회원가입</button>
+    </div>
+
+    <p id="msg"></p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyC35GSzG5lnuKuaB-AWmtQXCKQho9imJbs",
+      authDomain: "tools-login-997dd.firebaseapp.com",
+      projectId: "tools-login-997dd",
+      storageBucket: "tools-login-997dd.firebasestorage.app",
+      messagingSenderId: "226766047223",
+      appId: "1:226766047223:web:b29ef46bb0cf0de1b610f2",
+      measurementId: "G-BKCYCR9FNC"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
+

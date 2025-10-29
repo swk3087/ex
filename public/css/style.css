@@ -1,0 +1,88 @@
+body {
+  font-family: "Pretendard", sans-serif;
+  background: linear-gradient(180deg, #f0f6ff, #e9f0ff);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+#avgBox {
+  font-size: 18px;
+  color: #1c3e80;
+  margin: 10px 0 20px 0;
+}
+
+#title {
+  text-align: center;
+  font-size: 22px;
+  color: #234c9b;
+  margin-top: 80px;
+}
+
+#logoutBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #234c9b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+#logoutBtn:hover {
+  background: #182f6f;
+}
+
+#scoreArea {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.subject-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.subject-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1c3e80;
+  border-bottom: 2px solid #cfe1ff;
+  padding-bottom: 6px;
+}
+
+.subject-card label {
+  display: inline-block;
+  width: 160px;
+  font-size: 14px;
+  color: #444;
+}
+
+.subject-card input {
+  width: 80px;
+  padding: 4px 6px;
+  font-size: 14px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.subject-card span {
+  font-size: 14px;
+}
+
+.subject-card b {
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  color: #234c9b;
+}
+
