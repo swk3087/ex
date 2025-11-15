@@ -50,7 +50,7 @@ async function login() {
     }
 
     // 3️⃣ 최신 토큰
-    const idToken = await cred.user.getIdToken(true);
+    const idToken = await cred.user.getIdToken();
 
     // 4️⃣ 학번 확인 함수
     const loginCheck = async () => {

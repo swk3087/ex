@@ -72,10 +72,12 @@ function buildForm() {
       // 원점수 입력
       const tdRaw = document.createElement("td");
       const inputRaw = document.createElement("input");
-      inputRaw.type = "number";
-      inputRaw.min = 0;
-      inputRaw.max = 100;
-      inputRaw.value = 0;
+      // 원점수 입력은 숫자 또는 '@'를 허용하도록 텍스트 타입으로 지정합니다.
+      inputRaw.type = "text";
+      // 숫자만 입력할 수 있도록 패턴을 지정하고 '@' 기호도 허용합니다.
+      inputRaw.pattern = "^\\d{1,3}$|^@$";
+      inputRaw.placeholder = "점수 또는 @";
+      inputRaw.value = "";
       inputRaw.id = `raw_${sem.key}_${subj}`;
       tdRaw.appendChild(inputRaw);
       tr.appendChild(tdRaw);
@@ -108,8 +110,17 @@ async function fetchMsData() {
           const row = semData[subj] || {};
           const rawInput = document.getElementById(`raw_${sem.key}_${subj}`);
           const gradeInput = document.getElementById(`grade_${sem.key}_${subj}`);
-          if (rawInput && typeof row.raw === "number") rawInput.value = row.raw;
-          if (gradeInput && row.grade) gradeInput.value = row.grade;
+          if (rawInput) {
+            if (typeof row.raw === "number") {
+              rawInput.value = row.raw;
+            } else if (row.raw === null) {
+              // 미입력은 '@'로 표시합니다.
+              rawInput.value = "@";
+            }
+          }
+          if (gradeInput && row.grade) {
+            gradeInput.value = row.grade;
+          }
         }
       }
       // 출결, 봉사, 수상, 자치회 등 채우기
@@ -148,9 +159,19 @@ function collectFormData() {
     for (const subj of subjects) {
       const rawInput = document.getElementById(`raw_${sem.key}_${subj}`);
       const gradeInput = document.getElementById(`grade_${sem.key}_${subj}`);
-      const rawVal = rawInput ? parseFloat(rawInput.value) : 0;
+      // 원점수는 숫자 또는 '@'를 입력 받을 수 있다. '@'나 빈 값은 null로 처리한다.
+      let rawVal = null;
+      if (rawInput) {
+        const rawStr = (rawInput.value || "").trim();
+        if (rawStr === "" || rawStr === "@") {
+          rawVal = null;
+        } else {
+          const parsed = parseFloat(rawStr);
+          rawVal = isNaN(parsed) ? null : parsed;
+        }
+      }
       const gradeVal = gradeInput ? gradeInput.value.trim().toUpperCase() : "";
-      semObj[subj] = { raw: isNaN(rawVal) ? 0 : rawVal, grade: gradeVal };
+      semObj[subj] = { raw: rawVal, grade: gradeVal };
     }
     grades[sem.key] = semObj;
   }
@@ -192,10 +213,11 @@ function calculateSemesterScore(semKey, semData, base, achWeight, rawWeight) {
     const info = semData[subj];
     const raw = info.raw;
     const gradePoint = gradeToPoint(info.grade);
-    // 원점수와 성취도 둘 중 하나라도 존재해야 과목수로 인정 (원점수만 있는 경우도 인정)
-    if (raw > 0 || gradePoint > 0) {
+    // 원점수와 성취도 둘 중 하나라도 존재하면 과목수로 인정합니다.
+    // raw가 null이면 미입력으로 간주하여 평균 계산에서 제외합니다.
+    if (raw !== null || gradePoint > 0) {
       if (gradePoint > 0) sumAch += gradePoint;
-      if (raw > 0) sumRaw += raw;
+      if (raw !== null) sumRaw += raw;
       count += 1;
     }
   }
