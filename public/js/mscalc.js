@@ -111,8 +111,11 @@ async function fetchMsData() {
             if (typeof row.raw === "number") {
               // 저장된 숫자 점수는 그대로 표시합니다.
               rawInput.value = row.raw;
+            } else if (row.raw === "@") {
+              // 사용자가 '@'를 입력한 경우 저장된 대로 표시합니다.
+              rawInput.value = "@";
             } else {
-              // 저장된 값이 없으면 빈 칸으로 남겨둡니다.
+              // 저장된 값이 null 또는 undefined이면 빈 칸으로 남겨둡니다.
               rawInput.value = "";
             }
           }
@@ -161,8 +164,12 @@ function collectFormData() {
       let rawVal = null;
       if (rawInput) {
         const rawStr = (rawInput.value || "").trim();
-        if (rawStr === "" || rawStr === "@") {
+        if (rawStr === "") {
+          // 빈 문자열은 null로 저장하여 미입력으로 처리합니다.
           rawVal = null;
+        } else if (rawStr === "@") {
+          // '@' 기호는 그대로 문자열로 저장합니다.
+          rawVal = "@";
         } else {
           const parsed = parseFloat(rawStr);
           rawVal = isNaN(parsed) ? null : parsed;
@@ -212,10 +219,10 @@ function calculateSemesterScore(semKey, semData, base, achWeight, rawWeight) {
     const raw = info.raw;
     const gradePoint = gradeToPoint(info.grade);
     // 원점수와 성취도 둘 중 하나라도 존재하면 과목수로 인정합니다.
-    // raw가 null이면 미입력으로 간주하여 평균 계산에서 제외합니다.
-    if (raw !== null || gradePoint > 0) {
+    // raw가 null 또는 '@'이면 미입력으로 간주하여 평균 계산에서 제외합니다.
+    if ((raw !== null && raw !== "@") || gradePoint > 0) {
       if (gradePoint > 0) sumAch += gradePoint;
-      if (raw !== null) sumRaw += raw;
+      if (raw !== null && raw !== "@") sumRaw += raw;
       count += 1;
     }
   }
