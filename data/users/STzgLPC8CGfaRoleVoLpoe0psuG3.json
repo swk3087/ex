@@ -204,6 +204,56 @@
         },
         "역사": {
           "raw": null,
+          "grade": "@"
+        },
+        "수학": {
+          "raw": null,
+          "grade": ""
+        },
+        "과학": {
+          "raw": null,
+          "grade": ""
+        },
+        "기술·가정": {
+          "raw": null,
+          "grade": ""
+        },
+        "영어": {
+          "raw": null,
+          "grade": ""
+        },
+        "중국어": {
+          "raw": null,
+          "grade": "@"
+        },
+        "체육": {
+          "raw": null,
+          "grade": ""
+        },
+        "미술": {
+          "raw": null,
+          "grade": "@"
+        },
+        "음악": {
+          "raw": null,
+          "grade": ""
+        }
+      },
+      "2_1": {
+        "국어": {
+          "raw": 0,
+          "grade": ""
+        },
+        "도덕": {
+          "raw": 0,
+          "grade": ""
+        },
+        "사회": {
+          "raw": null,
+          "grade": "@"
+        },
+        "역사": {
+          "raw": 0,
           "grade": ""
         },
         "수학": {
@@ -236,57 +286,7 @@
         },
         "음악": {
           "raw": null,
-          "grade": ""
-        }
-      },
-      "2_1": {
-        "국어": {
-          "raw": 0,
-          "grade": ""
-        },
-        "도덕": {
-          "raw": 0,
-          "grade": ""
-        },
-        "사회": {
-          "raw": 0,
-          "grade": ""
-        },
-        "역사": {
-          "raw": 0,
-          "grade": ""
-        },
-        "수학": {
-          "raw": 0,
-          "grade": ""
-        },
-        "과학": {
-          "raw": 0,
-          "grade": ""
-        },
-        "기술·가정": {
-          "raw": 0,
-          "grade": ""
-        },
-        "영어": {
-          "raw": 0,
-          "grade": ""
-        },
-        "중국어": {
-          "raw": 0,
-          "grade": ""
-        },
-        "체육": {
-          "raw": 0,
-          "grade": ""
-        },
-        "미술": {
-          "raw": 0,
-          "grade": ""
-        },
-        "음악": {
-          "raw": 0,
-          "grade": ""
+          "grade": "@"
         }
       },
       "2_2": {
@@ -299,8 +299,8 @@
           "grade": ""
         },
         "사회": {
-          "raw": 0,
-          "grade": ""
+          "raw": null,
+          "grade": "@"
         },
         "역사": {
           "raw": 0,
@@ -335,8 +335,8 @@
           "grade": ""
         },
         "음악": {
-          "raw": 0,
-          "grade": ""
+          "raw": null,
+          "grade": "@"
         }
       },
       "3_1": {
@@ -373,8 +373,8 @@
           "grade": ""
         },
         "중국어": {
-          "raw": 0,
-          "grade": ""
+          "raw": null,
+          "grade": "@"
         },
         "체육": {
           "raw": 0,
@@ -409,7 +409,7 @@
     "councilMonths": 0,
     "result": {
       "semesterScores": {
-        "1_2": 4.667,
+        "1_2": 8,
         "2_1": 8,
         "2_2": 8,
         "3_1": 10
@@ -418,7 +418,7 @@
       "attendanceScore": 20,
       "volunteerScore": 20,
       "schoolActivityScore": 9.5,
-      "total": 90.167
+      "total": 93.5
     }
   }
 }
