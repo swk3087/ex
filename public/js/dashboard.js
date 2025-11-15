@@ -23,7 +23,7 @@ async function loadData(){
       const maxR1=maxData[s]?.[key]?.r1??100;
       total+=v.r2??0;
 
-      // 🔹 1차/2차지필 평균용 데이터 수집
+      //  1차/2차지필 평균용 데이터 수집
       if(name.includes("1차지필") && v.r1>0){ firstSum+=v.r1; firstCount++; }
       if(name.includes("2차지필") && v.r1>0){ secondSum+=v.r1; secondCount++; }
 
@@ -35,15 +35,13 @@ async function loadData(){
     d.innerHTML+=`<b>총점: ${total.toFixed(2)}</b>`;
     c.appendChild(d);
   }
-
-  // 🔹 평균 표시
+  //  평균 표시
   calcAverages(firstSum, firstCount, secondSum, secondCount);
 }
 
 function calcAverages(fSum, fCnt, sSum, sCnt){
   const firstAvg = fCnt>0 ? (fSum/fCnt).toFixed(2) : "-";
   const secondAvg = sCnt>0 ? (sSum/sCnt).toFixed(2) : "-";
-
   let avgBox = document.getElementById("avgBox");
   if(!avgBox){
     avgBox = document.createElement("div");
@@ -67,7 +65,7 @@ async function update(subject,key,value){
   loadData(); // 자동 갱신
 }
 
-// 🔹 ID 토큰 자동 갱신 (Firebase 공식 방식)
+//  ID 토큰 자동 갱신 (Firebase 공식 방식)
 firebase.auth().onIdTokenChanged(async (user) => {
   if (user) {
     const idToken = await user.getIdToken(true); // true = 강제 갱신
@@ -77,8 +75,25 @@ firebase.auth().onIdTokenChanged(async (user) => {
   }
 });
 
-function logout(){localStorage.clear();firebase.auth().signOut();location.href="index.html";}
-function translate(s){return{ korean:"국어",math:"수학",history:"역사",science:"과학",english:"영어",chinese:"중국어",morality:"도덕",pe:"체육",tech:"기술·가정",art:"미술"}[s]||s;}
+function logout(){
+  localStorage.clear();
+  firebase.auth().signOut();
+  location.href="index.html";
+}
+
+function translate(s){
+  return{
+    korean:"국어",
+    math:"수학",
+    history:"역사",
+    science:"과학",
+    english:"영어",
+    chinese:"중국어",
+    morality:"도덕",
+    pe:"체육",
+    tech:"기술·가정",
+    art:"미술"
+  }[s]||s;
+}
 
 loadData();
-

@@ -2,17 +2,27 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>학기말 점수 계산기</title>
+  <title>메뉴 선택</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
+  <!-- 로그인 후 사용자가 원하는 기능을 선택할 수 있도록 하는 페이지 -->
   <button id="logoutBtn" onclick="logout()">로그아웃</button>
-  <h2 id="title">과목별 점수 입력(자동저장됨)</h2>
-  <div id="scoreArea"></div>
+  <h2>원하는 기능을 선택하세요</h2>
+  <div style="margin:20px 0;">
+    <button onclick="location.href='dashboard.html'">학기말 점수 입력</button>
+    <button onclick="location.href='mscalc.html'">중학교 내신 계산기</button>
+  </div>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
   <script>
+    // 로그인 상태가 아니면 로그인 페이지로 돌려보냅니다.
+    const idToken = localStorage.getItem("idToken");
+    if (!idToken) {
+      location.href = "index.html";
+    }
+    // Firebase 초기화
     const firebaseConfig = {
       apiKey: "AIzaSyC35GSzG5lnuKuaB-AWmtQXCKQho9imJbs",
       authDomain: "tools-login-997dd.firebaseapp.com",
@@ -23,7 +33,11 @@
       measurementId: "G-BKCYCR9FNC"
     };
     firebase.initializeApp(firebaseConfig);
+    function logout(){
+      localStorage.clear();
+      firebase.auth().signOut();
+      location.href = "index.html";
+    }
   </script>
-  <script src="js/dashboard.js"></script>
 </body>
 </html>

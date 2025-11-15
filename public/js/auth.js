@@ -85,7 +85,6 @@ async function login() {
         await firebase.auth().signOut();
         return;
       }
-
       // 재확인
       ({ ok, status, body } = await loginCheck());
     }
@@ -99,13 +98,13 @@ async function login() {
 
     // ✅ 성공
     localStorage.setItem("idToken", idToken);
-    location.href = "dashboard.html";
+    // 기존에는 바로 dashboard.html로 이동했으나, 로그인 후 선택 페이지로 이동한다.
+    location.href = "choice.html";
 
   } catch (e) {
     msg("로그인 실패: " + e.message);
   }
 }
-
 
 async function register() {
   try {

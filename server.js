@@ -142,6 +142,36 @@ app.get("/api/user", requireAuth, async (req, res) => {
   const maxData = await readJSON(path.join(dataDir, "maxinput.json"));
   res.json({ userData, defaultData, maxData, stunum });
 });
+// 중학교 내신 데이터 조회
+app.get("/api/ms", requireAuth, async (req, res) => {
+  const userPath = path.join(usersDir, `${req.uid}.json`);
+  if (!fs.existsSync(userPath)) {
+    return res.status(404).json({ error: "데이터 없음" });
+  }
+  const userData = await readJSON(userPath);
+  const msData = userData.ms || {};
+  res.json({ msData });
+});
+
+// 중학교 내신 데이터 저장
+app.post("/api/ms", requireAuth, async (req, res) => {
+  try {
+    const { msData } = req.body;
+    if (!msData) {
+      return res.status(400).json({ error: "msData가 필요합니다." });
+    }
+    const userPath = path.join(usersDir, `${req.uid}.json`);
+    if (!fs.existsSync(userPath)) {
+      return res.status(404).json({ error: "데이터 없음" });
+    }
+    const userData = await readJSON(userPath);
+    userData.ms = msData;
+    await writeJSON(userPath, userData);
+    res.json({ success: true });
+  } catch (e) {
+    res.status(500).json({ error: "저장 실패" });
+  }
+});
 
 // 🔹 점수 수정
 app.post("/api/update", requireAuth, async (req, res) => {

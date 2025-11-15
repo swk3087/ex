@@ -66,6 +66,17 @@
   </script>
 
   <script src="js/auth.js"></script>
+<script>
+  // 🔹 이미 로그인된 사용자가 index.html에 접근하면 자동 리디렉션
+  firebase.auth().onAuthStateChanged(async (user) => {
+    if (user) {
+      const idToken = await user.getIdToken();
+      localStorage.setItem("idToken", idToken);
+      location.href = "dashboard.html";
+    }
+  });
+</script>
+
 </body>
 </html>
 
