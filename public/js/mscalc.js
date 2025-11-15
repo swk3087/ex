@@ -298,6 +298,7 @@ function calculateSchoolActivityScore(awards, months) {
 }
 
 // 총점 계산 함수: 학기별 점수, 체육·예술 점수, 출결, 봉사, 학교활동을 모두 더함
+// 총점 계산과 누락된 값 제외한 감점(마이너스) 계산
 function calculateTotal(data) {
   const { grades, attendance, volunteerHours, awards, councilMonths } = data;
   // 학기별 일반 교과 점수 합산
@@ -317,14 +318,69 @@ function calculateTotal(data) {
   // 학교활동 점수
   const schoolActivityScore = calculateSchoolActivityScore(awards, councilMonths);
   const total = parseFloat((gradeSum + artScore + attendanceScore + volunteerScore + schoolActivityScore).toFixed(3));
-  return { semesterScores, artScore, attendanceScore, volunteerScore, schoolActivityScore, total };
+  // 감점(마이너스) 계산: 입력된 값들만 기준으로 각 영역 최대 점수와의 차이를 합산
+  let minus = 0;
+  // 일반 교과: 학기별 최대 점수는 base + 성취도 최대(5) * achWeight + 원점수 최대(100) * rawWeight
+  for (const sem of semesters) {
+    // 학기 데이터 존재 여부 판별 (원점수 또는 성취도 중 하나라도 입력된 과목이 있는지)
+    const semData = data.grades[sem.key] || {};
+    let hasData = false;
+    for (const subj of subjects) {
+      if (artSubjects.includes(subj)) continue;
+      const info = semData[subj] || {};
+      const raw = info.raw;
+      const gp = gradeToPoint(info.grade);
+      if ((raw !== null && raw !== "@" && raw !== undefined) || gp > 0) {
+        hasData = true;
+        break;
+      }
+    }
+    if (hasData) {
+      const maxScore = sem.base + 5 * sem.achWeight + 100 * sem.rawWeight;
+      const actual = semesterScores[sem.key];
+      // 음수가 나오지 않도록 0 이상으로 제한
+      const diff = maxScore - actual;
+      if (diff > 0) minus += diff;
+    }
+  }
+  // 체육·예술: 최대 20점, 단 입력된 성취도가 있을 때만 계산
+  // count art subjects with A/B/C grades
+  let artSubjectCount = 0;
+  for (const sem of semesters) {
+    const semData = data.grades[sem.key] || {};
+    for (const subj of artSubjects) {
+      const info = semData[subj] || {};
+      const g = (info.grade || "").toUpperCase();
+      if (g === "A" || g === "B" || g === "C") {
+        artSubjectCount += 1;
+      }
+    }
+  }
+  if (artSubjectCount > 0) {
+    const diffArt = 20 - artScore;
+    if (diffArt > 0) minus += diffArt;
+  }
+  // 출결: 최대 20점 (1학년 6 + 2·3학년 7씩). 항상 계산
+  const diffAttendance = 20 - attendanceScore;
+  if (diffAttendance > 0) minus += diffAttendance;
+  // 봉사: 최대 20점. 항상 계산
+  const diffVolunteer = 20 - volunteerScore;
+  if (diffVolunteer > 0) minus += diffVolunteer;
+  // 학교 활동: 최대 10점. 항상 계산
+  const diffSchool = 10 - schoolActivityScore;
+  if (diffSchool > 0) minus += diffSchool;
+
+  // 소수점 셋째 자리까지 반올림
+  minus = parseFloat(minus.toFixed(3));
+
+  return { semesterScores, artScore, attendanceScore, volunteerScore, schoolActivityScore, total, minus };
 }
 
 // 결과를 화면에 표시합니다.
 function displayResult(result) {
   const area = document.getElementById("result");
   if (!area) return;
-  const { semesterScores, artScore, attendanceScore, volunteerScore, schoolActivityScore, total } = result;
+  const { semesterScores, artScore, attendanceScore, volunteerScore, schoolActivityScore, total, minus } = result;
   let html = "<h3>계산 결과</h3>";
   html += `<p>1학년 2학기 (일반교과): ${semesterScores["1_2"]}</p>`;
   html += `<p>2학년 1학기 (일반교과): ${semesterScores["2_1"]}</p>`;
@@ -335,6 +391,10 @@ function displayResult(result) {
   html += `<p>봉사 활동 점수: ${volunteerScore}</p>`;
   html += `<p>학교 활동 점수: ${schoolActivityScore}</p>`;
   html += `<h4>총점: ${total}점 / 200점 만점</h4>`;
+  // 감점 결과 표시: 입력되지 않은 값(원점수 null/@, 성취도 미입력) 제외한 감점 합산
+  if (typeof minus === 'number') {
+    html += `<p>[(입력되지 않은 값 제외한 마이너스된 점수) - ${minus}점]</p>`;
+  }
   area.innerHTML = html;
 }
 
