@@ -191,19 +191,19 @@
     "grades": {
       "1_2": {
         "국어": {
-          "raw": 0,
+          "raw": null,
           "grade": ""
         },
         "도덕": {
-          "raw": 0,
+          "raw": null,
           "grade": "A"
         },
         "사회": {
-          "raw": 0,
+          "raw": null,
           "grade": ""
         },
         "역사": {
-          "raw": 0,
+          "raw": null,
           "grade": ""
         },
         "수학": {
@@ -235,7 +235,7 @@
           "grade": ""
         },
         "음악": {
-          "raw": 0,
+          "raw": null,
           "grade": ""
         }
       },
@@ -404,12 +404,12 @@
         "absent": 0
       }
     },
-    "volunteerHours": 2728201040,
-    "awards": 4,
-    "councilMonths": 10101,
+    "volunteerHours": 27,
+    "awards": 3,
+    "councilMonths": 0,
     "result": {
       "semesterScores": {
-        "1_2": 4.444,
+        "1_2": 4.667,
         "2_1": 8,
         "2_2": 8,
         "3_1": 10
@@ -417,8 +417,8 @@
       "artScore": 10,
       "attendanceScore": 20,
       "volunteerScore": 20,
-      "schoolActivityScore": 10,
-      "total": 90.444
+      "schoolActivityScore": 9.5,
+      "total": 90.167
     }
   }
 }

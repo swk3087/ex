@@ -74,7 +74,7 @@ function buildForm() {
       inputRaw.type = "text";
       inputRaw.pattern = "^\\d{1,3}$|^@$";
       inputRaw.placeholder = "점수 또는 @";
-      inputRaw.value = "";
+      // 기본값을 설정하지 않아 빈 입력 상태로 둡니다. (디폴트 '0' 제거)
       inputRaw.id = `raw_${sem.key}_${subj}`;
       tdRaw.appendChild(inputRaw);
       tr.appendChild(tdRaw);
@@ -109,10 +109,11 @@ async function fetchMsData() {
           const gradeInput = document.getElementById(`grade_${sem.key}_${subj}`);
           if (rawInput) {
             if (typeof row.raw === "number") {
+              // 저장된 숫자 점수는 그대로 표시합니다.
               rawInput.value = row.raw;
-            } else if (row.raw === null) {
-              // 미입력은 '@'로 표시합니다.
-              rawInput.value = "@";
+            } else {
+              // 저장된 값이 없으면 빈 칸으로 남겨둡니다.
+              rawInput.value = "";
             }
           }
           if (gradeInput && row.grade) {
@@ -348,6 +349,30 @@ async function saveMsData(data, result) {
   }
 }
 
+// 실시간 자동 저장을 위한 변수 및 함수
+let saveTimeout = null;
+function autoSave() {
+  // 입력 변경 시 일정 시간 지연 후 자동 저장합니다.
+  if (saveTimeout) clearTimeout(saveTimeout);
+  saveTimeout = setTimeout(() => {
+    const data = collectFormData();
+    // 변화를 반영하여 점수를 계산하고 저장합니다.
+    const result = calculateTotal(data);
+    saveMsData(data, result);
+    // 결과를 즉시 화면에 표시하지는 않으나 필요하면 다음 줄을 활성화하세요.
+    // displayResult(result);
+  }, 1000);
+}
+
+// 입력 요소에 자동 저장 이벤트를 바인딩합니다.
+function attachAutoSave() {
+  const inputs = document.querySelectorAll('#msForm input, #extraInputs input');
+  inputs.forEach((el) => {
+    // input 이벤트는 값 변경시마다 발생합니다.
+    el.addEventListener('input', autoSave);
+  });
+}
+
 // 로그아웃 처리: 대시보드와 동일한 방식으로 로그아웃합니다.
 function logout() {
   localStorage.clear();
@@ -356,9 +381,12 @@ function logout() {
 }
 
 // 초기화: 폼을 생성하고 데이터를 로드한 후 이벤트 리스너를 설정합니다.
-function init() {
+async function init() {
   buildForm();
-  fetchMsData();
+  // 저장된 데이터를 불러올 때까지 기다립니다.
+  await fetchMsData();
+  // 자동 저장 이벤트를 바인딩합니다.
+  attachAutoSave();
   const btn = document.getElementById("calcBtn");
   if (btn) {
     btn.addEventListener("click", () => {
