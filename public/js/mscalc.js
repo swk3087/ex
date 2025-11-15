@@ -37,51 +37,48 @@ const semesters = [
 // DOM 요소를 생성하여 과목별 입력 폼을 구성합니다.
 function buildForm() {
   const container = document.getElementById("msForm");
-  // 기본 테이블 구조 생성
-  const table = document.createElement("table");
-  table.style.borderCollapse = "collapse";
-
-  // 헤더 행 생성: 첫 번째 셀은 빈 칸, 그 다음 학기별로 원점수/성취도 두 칸씩 생성
-  const thead = document.createElement("thead");
-  const headerRow = document.createElement("tr");
-  // 과목 헤더
-  const subjectTh = document.createElement("th");
-  subjectTh.textContent = "과목";
-  headerRow.appendChild(subjectTh);
-  // 각 학기별 헤더 생성
+  // 각 학기별로 독립된 테이블을 생성하여 세로로 긴 레이아웃을 구현한다.
   for (const sem of semesters) {
+    // 학기 제목 표시
+    const semHeader = document.createElement("h4");
+    semHeader.textContent = sem.label;
+    container.appendChild(semHeader);
+    // 테이블 생성
+    const table = document.createElement("table");
+    table.style.borderCollapse = "collapse";
+    // 헤더 행: 과목, 원점수, 성취도
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    const thSubject = document.createElement("th");
+    thSubject.textContent = "과목";
+    headerRow.appendChild(thSubject);
     const thRaw = document.createElement("th");
-    thRaw.textContent = `${sem.label} 원점수`;
-    const thGrade = document.createElement("th");
-    thGrade.textContent = `${sem.label} 성취도`;
+    thRaw.textContent = "원점수";
     headerRow.appendChild(thRaw);
+    const thGrade = document.createElement("th");
+    thGrade.textContent = "성취도";
     headerRow.appendChild(thGrade);
-  }
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-
-  // 몸체 행 생성
-  const tbody = document.createElement("tbody");
-  for (const subj of subjects) {
-    const tr = document.createElement("tr");
-    const tdName = document.createElement("td");
-    tdName.textContent = subj;
-    tr.appendChild(tdName);
-    // 각 학기별로 입력 필드 추가
-    for (const sem of semesters) {
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+    // 몸체: 각 과목별 입력 행
+    const tbody = document.createElement("tbody");
+    for (const subj of subjects) {
+      const tr = document.createElement("tr");
+      // 과목명
+      const tdName = document.createElement("td");
+      tdName.textContent = subj;
+      tr.appendChild(tdName);
       // 원점수 입력
       const tdRaw = document.createElement("td");
       const inputRaw = document.createElement("input");
-      // 원점수 입력은 숫자 또는 '@'를 허용하도록 텍스트 타입으로 지정합니다.
       inputRaw.type = "text";
-      // 숫자만 입력할 수 있도록 패턴을 지정하고 '@' 기호도 허용합니다.
       inputRaw.pattern = "^\\d{1,3}$|^@$";
       inputRaw.placeholder = "점수 또는 @";
       inputRaw.value = "";
       inputRaw.id = `raw_${sem.key}_${subj}`;
       tdRaw.appendChild(inputRaw);
       tr.appendChild(tdRaw);
-      // 성취도 입력 (문자 입력: A~E 또는 @)
+      // 성취도 입력
       const tdGrade = document.createElement("td");
       const inputGrade = document.createElement("input");
       inputGrade.type = "text";
@@ -90,11 +87,11 @@ function buildForm() {
       inputGrade.id = `grade_${sem.key}_${subj}`;
       tdGrade.appendChild(inputGrade);
       tr.appendChild(tdGrade);
+      tbody.appendChild(tr);
     }
-    tbody.appendChild(tr);
+    table.appendChild(tbody);
+    container.appendChild(table);
   }
-  table.appendChild(tbody);
-  container.appendChild(table);
 }
 
 // 서버에서 저장된 데이터를 가져와 폼을 채웁니다.

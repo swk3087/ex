@@ -196,7 +196,7 @@
         },
         "도덕": {
           "raw": 0,
-          "grade": ""
+          "grade": "A"
         },
         "사회": {
           "raw": 0,
@@ -409,7 +409,7 @@
     "councilMonths": 10101,
     "result": {
       "semesterScores": {
-        "1_2": 4,
+        "1_2": 4.444,
         "2_1": 8,
         "2_2": 8,
         "3_1": 10
@@ -418,7 +418,7 @@
       "attendanceScore": 20,
       "volunteerScore": 20,
       "schoolActivityScore": 10,
-      "total": 90
+      "total": 90.444
     }
   }
 }

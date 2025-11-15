@@ -6,6 +6,42 @@
   <!-- 재사용되는 스타일 시트를 불러옵니다 -->
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- 내신 계산기 테이블 스타일: 엑셀처럼 칸의 테두리가 보이도록 설정 -->
+  <style>
+    /* 전체 테이블 설정 */
+    #msForm table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    /* 셀 테두리 */
+    #msForm th, #msForm td {
+      border: 1px solid #ccc;
+      padding: 4px;
+      text-align: left;
+      vertical-align: middle;
+    }
+    /* 헤더 배경색 */
+    #msForm th {
+      background-color: #f6f6f6;
+    }
+    /* 과목명 열 강조 */
+    #msForm td:first-child {
+      background-color: #fafafa;
+      font-weight: bold;
+    }
+    /* 입력창 기본 스타일 재정의 */
+    #msForm input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      padding: 4px;
+    }
+    #msForm input[type="text"]:focus {
+      outline: none;
+    }
+  </style>
 </head>
 <body>
   <!-- 상단에 로그아웃 버튼과 기존 학기말 계산기로 돌아가는 링크를 제공합니다 -->
