@@ -1,0 +1,13 @@
+{
+    auto_https disable_redirects
+    http_port 2000
+}
+my-jum-su.kro.kr:3000 {
+    reverse_proxy 127.0.0.1:2001
+    tls swk1072@gmail.com
+
+    log {
+        output file /data/data/com.termux/files/home/caddy.log
+    }
+}
+

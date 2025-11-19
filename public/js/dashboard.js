@@ -50,7 +50,7 @@ function calcAverages(fSum, fCnt, sSum, sCnt){
     avgBox.style.fontWeight = "600";
     document.body.insertBefore(avgBox, document.getElementById("scoreArea"));
   }
-  avgBox.innerHTML = `1차지필 평균: ${firstAvg} / 2차지필 평균: ${secondAvg}`;
+  avgBox.innerHTML = `<center>1차지필 평균: ${firstAvg} / 2차지필 평균: ${secondAvg}</center>`;
 }
 
 async function update(subject,key,value){

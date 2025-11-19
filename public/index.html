@@ -6,11 +6,14 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/app.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
+<link rel="apple-touch-icon" href="icons/icon-512.png">
 
 </head>
 <body>
   <div class="card">
-    <h2>학기말 점수 계산기</h2>
+    <h2>내신 점수 계산기</h2>
 
     <div class="tabs">
       <div class="tab active" id="loginTab" onclick="showTab('login')">로그인</div>
@@ -29,6 +32,8 @@
         <input id="loginStunum" placeholder="학번 (4자리)">
       </div>
       <button onclick="login()">로그인</button>
+
+      <button id="installBtn" onclick="installApp()">앱 설치</button>
     </div>
 
     <!-- 회원가입 -->
@@ -76,6 +81,31 @@
     }
   });
 </script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js").catch(console.error);
+    });
+  }
+
+  // 설치 프롬프트 제어(선택)
+  let deferredPrompt;
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    const btn = document.getElementById("installBtn");
+    if (btn) btn.style.display = "inline-block";
+  });
+
+  async function installApp(){
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    console.log("Install:", outcome); // accepted / dismissed
+  }
+</script>
+
 
 </body>
 </html>

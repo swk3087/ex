@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
+<link rel="apple-touch-icon" href="icons/icon-512.png">
+
   <meta charset="UTF-8">
   <title>학기말 점수 계산기</title>
   <link rel="stylesheet" href="css/style.css">
@@ -8,6 +12,7 @@
 </head>
 <body>
   <button id="logoutBtn" onclick="logout()">로그아웃</button>
+  <button id="gotoDashboard" onclick="location.href='mscalc.html'">가내신 계산기</button>
   <h2 id="title">과목별 점수 입력(자동저장됨)</h2>
   <div id="scoreArea"></div>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>

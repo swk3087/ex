@@ -418,7 +418,8 @@
       "attendanceScore": 20,
       "volunteerScore": 20,
       "schoolActivityScore": 9.5,
-      "total": 123.156
+      "total": 123.156,
+      "minus": 3.844
     }
   }
 }
