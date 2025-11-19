@@ -1,15 +1,23 @@
 // public/sw.js
-const CACHE_NAME = "naesin-v1";
+// 서비스 워커는 오프라인 캐시 및 빠른 로딩을 제공하여 PWA 경험을 개선합니다【151759444665620†L176-L190】.
+const CACHE_NAME = "naesin-v2";
 const CORE_ASSETS = [
-  "/",              // 서버가 루트를 dashboard가 아닌 index로 서빙한다면 "/" 대신 "/index.html"로 바꾸세요
+  "/",
   "/index.html",
+  "/login.html",
   "/choice.html",
   "/dashboard.html",
   "/mscalc.html",
+  "/css/style.css",
+  "/css/app.css",
   "/js/auth.js",
   "/js/dashboard.js",
   "/js/mscalc.js",
-  "/manifest.json"
+  "/js/nav.js",
+  "/manifest.json",
+  "/icons/icon-192.png",
+  "/icons/icon-512.png",
+  "/icons/maskable-512.png"
 ];
 
 self.addEventListener("install", (e) => {

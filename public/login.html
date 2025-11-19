@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 | 내신 계산기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="내신 점수 계산기 로그인 페이지. 이메일 인증 후 안전하게 로그인하고 자신의 내신을 계산하세요.">
+  <!-- PWA 설정 -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111827">
+  <link rel="apple-touch-icon" href="icons/icon-512.png">
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <!-- 네비게이션: 로그인 페이지에서는 홈과 특징만 표시 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="index.html">내신 계산기</a></div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="login.html">로그인</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="card" style="margin-top: 80px;">
+    <div class="tabs">
+      <div class="tab active" id="loginTab" onclick="showTab('login')">로그인</div>
+      <div class="tab" id="registerTab" onclick="showTab('register')">회원가입</div>
+    </div>
+    <!-- 로그인 폼 -->
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="email" id="loginEmail" placeholder="이메일" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="loginPassword" placeholder="비밀번호" required>
+      </div>
+      <div class="input-group">
+        <input type="text" id="loginStunum" placeholder="학번 (4자리)" required>
+      </div>
+      <button type="button" onclick="login()">로그인</button>
+    </form>
+    <!-- 회원가입 폼 -->
+    <form id="registerForm" class="hidden">
+      <div class="input-group">
+        <input type="email" id="registerEmail" placeholder="이메일" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="registerPassword" placeholder="비밀번호" required>
+      </div>
+      <div class="input-group">
+        <input type="text" id="registerStunum" placeholder="학번 (4자리)" required>
+      </div>
+      <button type="button" onclick="register()">회원가입</button>
+    </form>
+    <div id="msg"></div>
+  </div>
+  <!-- Firebase & 로그인 로직 -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script>
+    // Firebase 초기화 (로그인 페이지는 로그인 여부를 체크하지 않음)
+    const firebaseConfig = {
+      apiKey: "AIzaSyC35GSzG5lnuKuaB-AWmtQXCKQho9imJbs",
+      authDomain: "tools-login-997dd.firebaseapp.com",
+      projectId: "tools-login-997dd",
+      storageBucket: "tools-login-997dd.firebasestorage.app",
+      messagingSenderId: "226766047223",
+      appId: "1:226766047223:web:b29ef46bb0cf0de1b610f2",
+      measurementId: "G-BKCYCR9FNC"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/auth.js"></script>
+  <script src="js/nav.js"></script>
+  <!-- PWA 서비스 워커 등록 -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+      });
+    }
+  </script>
+</body>
+</html>

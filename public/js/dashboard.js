@@ -1,5 +1,6 @@
 const idToken = localStorage.getItem("idToken");
-if(!idToken) location.href="index.html";
+// 로그인 토큰이 없으면 로그인 페이지로 리디렉션
+if (!idToken) location.href = "login.html";
 
 async function loadData(){
   const res = await fetch("/api/user",{headers:{"Authorization":"Bearer "+idToken}});
@@ -78,7 +79,7 @@ firebase.auth().onIdTokenChanged(async (user) => {
 function logout(){
   localStorage.clear();
   firebase.auth().signOut();
-  location.href="index.html";
+  location.href = "login.html";
 }
 
 function translate(s){

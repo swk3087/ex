@@ -1,11 +1,11 @@
 {
   "name": "내신 점수 계산기",
-  "short_name": "점수계산",
+  "short_name": "내신계산",
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fdfdea",
-  "theme_color": "#fdfdea",
+  "background_color": "#111827",
+  "theme_color": "#111827",
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -24,5 +24,5 @@
       "purpose": "maskable"
     }
   ],
-  "id": "my-jum-su.kro.kr"
+  "id": "https://my-jum-su.kro.kr"
 }

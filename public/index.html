@@ -2,111 +2,132 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>학기말 점수 계산기</title>
+  <title>내신 점수 계산기 | 학기말·가내신 자동 계산</title>
+  <meta name="description" content="중학생을 위한 내신 점수 계산 서비스. 학기말 성적과 가내신 점수를 자동으로 계산하고 효율적으로 관리하세요.">
+  <meta name="keywords" content="내신, 점수, 계산기, 학기말, 가내신, 중학생, 성적">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <!-- Canonical URL to avoid duplicate content issues -->
+  <link rel="canonical" href="/">
+  <!-- Open Graph / social sharing metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="내신 점수 계산기">
+  <meta property="og:description" content="중학생을 위한 내신 점수 계산 서비스를 만나보세요. 학기말과 가내신 점수를 손쉽게 계산합니다.">
+  <meta property="og:url" content="/">
+  <meta property="og:image" content="icons/icon-512.png">
+  <!-- PWA manifest and theme color -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111827">
+  <!-- Apple touch icon for iOS devices -->
+  <link rel="apple-touch-icon" href="icons/icon-512.png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/app.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#111827">
-<link rel="apple-touch-icon" href="icons/icon-512.png">
-
+  <!-- 기본 스타일을 보완하기 위한 간단한 내부 스타일 -->
+  <style>
+    /* 영웅 섹션 스타일 */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      /* 상단 고정 네비게이션 바 공간 확보 */
+      padding-top: 120px;
+    }
+    .hero img {
+      width: 120px;
+      height: 120px;
+    }
+    .cta-buttons button {
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .cta-buttons .primary {
+      background-color: #2563eb;
+      color: white;
+    }
+    .cta-buttons .secondary {
+      background-color: #e5e7eb;
+      color: #374151;
+    }
+    /* 특징 섹션 */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+    .feature {
+      flex: 1 1 280px;
+      padding: 20px;
+    }
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <h2>내신 점수 계산기</h2>
-
-    <div class="tabs">
-      <div class="tab active" id="loginTab" onclick="showTab('login')">로그인</div>
-      <div class="tab" id="registerTab" onclick="showTab('register')">회원가입</div>
+  <!-- 네비게이션 바: 홈/기능 및 로그인 링크 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="index.html">내신 계산기</a></div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="dashboard.html">학기말 점수</a></li>
+        <li><a href="mscalc.html">가내신</a></li>
+        <li><a href="login.html">로그인/가입</a></li>
+      </ul>
     </div>
-
-    <!-- 로그인 -->
-    <div id="loginForm">
-      <div class="input-group">
-        <input id="loginEmail" type="email" placeholder="이메일 주소">
-      </div>
-      <div class="input-group">
-        <input id="loginPassword" type="password" placeholder="비밀번호">
-      </div>
-      <div class="input-group">
-        <input id="loginStunum" placeholder="학번 (4자리)">
-      </div>
-      <button onclick="login()">로그인</button>
-
-      <button id="installBtn" onclick="installApp()">앱 설치</button>
+  </nav>
+  <header class="hero">
+    <img src="icons/icon-512.png" alt="내신 점수 계산기 로고">
+    <h1>내신 점수 계산기</h1>
+    <p>중학생을 위한 학기말·가내신 점수를 손쉽게 계산하세요</p>
+    <div class="cta-buttons">
+      <button class="primary" onclick="location.href='login.html'">계산하러가기</button>
     </div>
-
-    <!-- 회원가입 -->
-    <div id="registerForm" class="hidden">
-      <div class="input-group">
-        <input id="registerEmail" type="email" placeholder="이메일 주소">
+  </header>
+  <main id="features">
+    <section class="features">
+      <div class="feature">
+        <h3>학기말 점수 계산</h3>
+        <p>문정중학교 2학년만을 위한 2학기 가내산 계산기! 수행, 지필 점수 입력 시 자동으로 학기말 점수를 계산합니다.</p>
       </div>
-      <div class="input-group">
-        <input id="registerPassword" type="password" placeholder="비밀번호">
+      <div class="feature">
+        <h3>가내신 계산</h3>
+        <p>중학교 1~3학년의 가내신 점수를 계산하여 체육·예술, 봉사 활동 점수까지 반영합니다. (2027학년도 경기도 고등학교 입학 내신성적 반영지침 예고(안) 기준 입니다.)</p>
       </div>
-      <div class="input-group">
-        <input id="registerStunum" placeholder="학번 (4자리)">
+      <div class="feature">
+        <h3>실시간 저장 및 강력한 보안</h3>
+        <p>Google Firebase에 계정 정보를 저장 하며, 입력 된 정보는 실시간으로 암호화되어 저장됩니다.</p>
       </div>
-      <button onclick="register()">회원가입</button>
-    </div>
-
-    <p id="msg"></p>
-  </div>
-
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyC35GSzG5lnuKuaB-AWmtQXCKQho9imJbs",
-      authDomain: "tools-login-997dd.firebaseapp.com",
-      projectId: "tools-login-997dd",
-      storageBucket: "tools-login-997dd.firebasestorage.app",
-      messagingSenderId: "226766047223",
-      appId: "1:226766047223:web:b29ef46bb0cf0de1b610f2",
-      measurementId: "G-BKCYCR9FNC"
-    };
-    firebase.initializeApp(firebaseConfig);
-  </script>
-
-  <script src="js/auth.js"></script>
-<script>
-  // 🔹 이미 로그인된 사용자가 index.html에 접근하면 자동 리디렉션
-  firebase.auth().onAuthStateChanged(async (user) => {
-    if (user) {
-      const idToken = await user.getIdToken();
-      localStorage.setItem("idToken", idToken);
-      location.href = "choice.html";
+    </section>
+  </main>
+ 
+  <!-- JSON-LD 구조화 데이터: 웹사이트 정보 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "내신 점수 계산기",
+    "url": "/",
+    "description": "중학생을 위한 내신 점수 계산 서비스",
+    "publisher": {
+      "@type": "Organization",
+      "name": "내신 점수 계산기"
     }
-  });
-</script>
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/sw.js").catch(console.error);
-    });
   }
-
-  // 설치 프롬프트 제어(선택)
-  let deferredPrompt;
-  window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-    const btn = document.getElementById("installBtn");
-    if (btn) btn.style.display = "inline-block";
-  });
-
-  async function installApp(){
-    if (!deferredPrompt) return;
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    deferredPrompt = null;
-    console.log("Install:", outcome); // accepted / dismissed
-  }
-</script>
-
-
+  </script>
+  <!-- PWA service worker registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+      });
+    }
+  </script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
-

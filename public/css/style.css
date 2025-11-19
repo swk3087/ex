@@ -5,6 +5,113 @@ body {
   padding: 0;
   min-height: 100vh;
 }
+
+/* -------------------------------------------
+   Navigation Bar Styles
+   ------------------------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Container within the navbar to control width */
+.nav-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo styling */
+.nav-logo a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #234c9b;
+  text-decoration: none;
+}
+
+/* Hamburger button for mobile */
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a,
+.nav-links button.logout {
+  text-decoration: none;
+  color: #234c9b;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-links a:hover,
+.nav-links button.logout:hover {
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -240px;
+    width: 240px;
+    height: calc(100% - 60px);
+    background: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+  }
+  .nav-links.open {
+    right: 0;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Button and call-to-action animations */
+button, .cta-buttons button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover, .cta-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
 #avgBox {
   font-size: 18px;
   color: #1c3e80;
@@ -85,4 +192,3 @@ body {
   margin-top: 8px;
   color: #234c9b;
 }
-

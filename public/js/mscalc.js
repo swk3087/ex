@@ -4,7 +4,7 @@
 // Firebase 인증 토큰을 확인합니다. 토큰이 없으면 로그인 화면으로 이동합니다.
 const idToken = localStorage.getItem("idToken");
 if (!idToken) {
-  location.href = "index.html";
+  location.href = "login.html";
 }
 
 // 과목 목록 및 학기 정의
@@ -444,7 +444,7 @@ function attachAutoSave() {
 function logout() {
   localStorage.clear();
   firebase.auth().signOut();
-  location.href = "index.html";
+  location.href = "login.html";
 }
 
 // 초기화: 폼을 생성하고 데이터를 로드한 후 이벤트 리스너를 설정합니다.

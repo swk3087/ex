@@ -5,18 +5,33 @@
   <title>기능 선택</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#111827">
-<link rel="apple-touch-icon" href="icons/icon-512.png">
+  <!-- PWA 설정 -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111827">
+  <link rel="apple-touch-icon" href="icons/icon-512.png">
 </head>
 <body>
+  <!-- 네비게이션 바: 페이지 이동 및 로그아웃 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="index.html">내신 계산기</a></div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="choice.html">선택</a></li>
+        <li><a href="dashboard.html">학기말 점수</a></li>
+        <li><a href="mscalc.html">가내신</a></li>
+        <li><button class="logout" onclick="logout()">로그아웃</button></li>
+      </ul>
+    </div>
+  </nav>
   <!-- 로그인 후 사용자가 원하는 기능을 선택할 수 있도록 하는 페이지 -->
-  <button id="logoutBtn" onclick="logout()">로그아웃</button><center>
+  <center>
   <h2>원하는 기능을 선택하세요</h2>
   <p>1. 모든 도구는 11년생 기준으로 설계되었습니다.</p>
   <p>2. 모든 정보는 실시간으로 AES-256-GCM 암호화되어 저장되며 계정 정보는 Google Firebase에 안전하게 보관됩니다.</p>
   <p>3. 모든 도구는 검증된 알고리즘을 기반으로 사용자의 점수를 산출하지만, 계산 과정에서 오류가 발생할 가능성이 있으며 이에 대한 책임은 본 도구에 귀속되지 않습니다.</p>
- <div style="margin:20px 0;">
+  <div style="margin:20px 0;">
     <button onclick="location.href='dashboard.html'">학기말 점수 산출기(문정중 2학기 기준)</button>
     <button onclick="location.href='mscalc.html'">가내신 계산기</button>
   </div></center>
@@ -26,7 +41,7 @@
     // 로그인 상태가 아니면 로그인 페이지로 돌려보냅니다.
     const idToken = localStorage.getItem("idToken");
     if (!idToken) {
-      location.href = "index.html";
+      location.href = "login.html";
     }
     // Firebase 초기화
     const firebaseConfig = {
@@ -39,11 +54,7 @@
       measurementId: "G-BKCYCR9FNC"
     };
     firebase.initializeApp(firebaseConfig);
-    function logout(){
-      localStorage.clear();
-      firebase.auth().signOut();
-      location.href = "index.html";
-    }
   </script>
+  <script src="js/nav.js"></script>
 </body>
 </html>

@@ -48,11 +48,22 @@
   </style>
 </head>
 <body>
-  <!-- 상단에 로그아웃 버튼과 기존 학기말 계산기로 돌아가는 링크를 제공합니다 -->
-  <button id="logoutBtn" onclick="logout()">로그아웃</button>
-  <button id="gotoDashboard" onclick="location.href='dashboard.html'">학기말 계산기</button>
+  <!-- 상단 네비게이션: 페이지 이동 및 로그아웃 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="index.html">내신 계산기</a></div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="choice.html">선택</a></li>
+        <li><a href="dashboard.html">학기말 점수</a></li>
+        <li><a href="mscalc.html">가내신</a></li>
+        <li><button class="logout" onclick="logout()">로그아웃</button></li>
+      </ul>
+    </div>
+  </nav>
 
-  <h2>중학교 가내신 계산기</h2>
+  <h2 style="margin-top:100px;">중학교 가내신 계산기</h2>
   <!-- 안내 문구: 입력 방법 설명 -->
   <p id="inputNotice" style="margin-top:10px; font-size:0.9em; color:#555;">
     ※ 원점수나 성취도 점수가 없는 과목의 경우 <strong>@</strong> 기호를 입력하면 해당 과목은 평균 계산에서 제외됩니다. 점수를 입력하지 않으면 기본 값이 사용됩니다.
@@ -127,5 +138,6 @@
     firebase.initializeApp(firebaseConfig);
   </script>
   <script src="js/mscalc.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
