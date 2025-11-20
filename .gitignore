@@ -6,3 +6,4 @@ up.sh
 install.sh
 data/users/
 data/stunum.json
+log/
