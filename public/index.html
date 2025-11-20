@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="icons/icon-512.png">
   <title>내신 점수 계산기 | 학기말·가내신 자동 계산</title>
   <meta name="description" content="중학생을 위한 내신 점수 계산 서비스. 학기말 성적과 가내신 점수를 자동으로 계산하고 효율적으로 관리하세요.">
   <meta name="keywords" content="내신, 점수, 계산기, 학기말, 가내신, 중학생, 성적">
@@ -11,7 +12,7 @@
   <link rel="canonical" href="/">
   <!-- Open Graph / social sharing metadata -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="내신 점수 계산기">
+  <meta property="og:title" content="중학교 내신 점수 계산기">
   <meta property="og:description" content="중학생을 위한 내신 점수 계산 서비스를 만나보세요. 학기말과 가내신 점수를 손쉽게 계산합니다.">
   <meta property="og:url" content="/">
   <meta property="og:image" content="icons/icon-512.png">
@@ -86,7 +87,8 @@
     <h1>내신 점수 계산기</h1>
     <p>중학생을 위한 학기말·가내신 점수를 손쉽게 계산하세요</p>
     <div class="cta-buttons">
-      <button class="primary" onclick="location.href='login.html'">계산하러가기</button>
+      <button class="primary" onclick="location.href='login.html'">계산하러 가기</button>
+      <button id="installBtn" onclick="installApp()">앱 설치</button>
     </div>
   </header>
   <main id="features">
@@ -111,8 +113,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "내신 점수 계산기",
-    "url": "/",
+    "name": "중학교 내신 점수 계산기",
+    "url": "https://my-jum-su.kro.kr/",
     "description": "중학생을 위한 내신 점수 계산 서비스",
     "publisher": {
       "@type": "Organization",
@@ -121,13 +123,33 @@
   }
   </script>
   <!-- PWA service worker registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(console.error);
-      });
-    }
-  </script>
+  
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js").catch(console.error);
+    });
+  }
+
+  // 설치 프롬프트 제어(선택)
+  let deferredPrompt;
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    const btn = document.getElementById("installBtn");
+    if (btn) btn.style.display = "inline-block";
+  });
+
+  async function installApp(){
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    console.log("Install:", outcome); // accepted / dismissed
+  }
+</script>
+
+
   <script src="js/nav.js"></script>
 </body>
 </html>
