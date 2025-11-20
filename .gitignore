@@ -4,3 +4,5 @@ ex.zip
 node_modules/
 up.sh
 install.sh
+data/users/
+data/stunum.json
