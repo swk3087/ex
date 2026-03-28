@@ -9,7 +9,7 @@ import { calculateR2 } from "./utils/scoreUtil.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
-const PORT = 80;
+const PORT = 2222;
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
